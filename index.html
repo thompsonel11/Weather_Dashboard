@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+  <header class="weatherDashboard">
+    <div class="container text-center">
+      <h1>Weather Dashboard</h1>
+    </div>
+  </header>
+
+  <section class="Container">
+    <!-- Seach for a city  -->
+    <div class="row-1">
+      <aside class="searchBox col-12 col-md-4 col-lg-3">
+          <h3 class="searchInputHeader">Search for a City:</h3>
+            <input type="text" class="searchInput"></input>
+            <button class="searchBtn">Search</button>
+            <ul class="searchHistory">
+                <li class="searchHistory-item" id="searchHistory-item1"></li>
+                <li class="searchHistory-item" id="searchHistory-item2"></li>
+                <li class="searchHistory-item" id="searchHistory-item3"></li>
+                <li class="searchHistory-item" id="searchHistory-item4"></li>
+                <li class="searchHistory-item" id="searchHistory-item5"></li>
+                <li class="searchHistory-item" id="searchHistory-item6"></li>
+                <li class="searchHistory-item" id="searchHistory-item7"></li>
+                <li class="searchHistory-item" id="searchHistory-item8"></li>
+            </ul>
+      </aside>
+<!-- Current City + Weather  -->
+      <div class= "row-2">
+          <div class = "currentForecast">
+            <h2 class = "City-Date-Icon"></h2>
+            <div class = "temp">Temp: </div>
+            <div class = "wind">Wind: </div>
+            <div class = "humidity">Humidity: </div>
+            <div class = "UVIndex">UV Index: </div>
+          </div>
+<!-- 5 day forecast  -->
+          <div class = "fiveDayForecast">
+              <h3 class = "col-md-12">5 Day Forecast: </h3>
+<!-- Day 1 of 5 -->
+              <div class="col-md-12">
+                <div class="5day-date"></div>
+                <img class="5day-icon">
+                <div class="temp">Temp: <span>F</span></div>
+                <div class="wind">Wind: <span>MPH</span></div>
+                <div class="humidity">Humidity: <span>%</span></div>
+              </div>
+<!-- Day 2 of 5 -->
+            <div class="col-md-12">
+                <div class="5day-date"></div>
+                <img class="5day-icon">
+                <div class="temp">Temp: <span>F</span></div>
+                <div class="wind">Wind: <span>MPH</span></div>
+                <div class="humidity">Humidity: <span>%</span></div>
+            </div>
+<!-- Day 3 of 5 -->
+            <div class="col-md-12">
+                <div class="5day-date"></div>
+                <img class="5day-icon">
+                <div class="temp">Temp: <span>F</span></div>
+                <div class="wind">Wind: <span>MPH</span></div>
+                <div class="humidity">Humidity: <span>%</span></div>
+            </div>
+<!-- Day 4 of 5 -->
+            <div class="col-md-12">
+                <div class="5day-date"></div>
+                <img class="5day-icon">
+                <div class="temp">Temp: <span>F</span></div>
+                <div class="wind">Wind: <span>MPH</span></div>
+                <div class="humidity">Humidity: <span>%</span></div>
+            </div>
+<!-- Day 5 of 5 -->
+            <div class="col-md-12">
+                <div class="5day-date"></div>
+                <img class="5day-icon">
+                <div class="temp">Temp: <span>F</span></div>
+                <div class="wind">Wind: <span>MPH</span></div>
+                <div class="humidity">Humidity: <span>%</span></div>
+            </div>
+
+         </div>
+       </div>  
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

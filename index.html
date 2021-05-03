@@ -9,40 +9,41 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/style.css">
   <title>Weather Dashboard</title>
 </head>
 
 <body>
 
   <header class="weatherDashboard">
-    <div class="container text-center">
+    <div class="container text-center .bg-gradient">
       <h1>Weather Dashboard</h1>
     </div>
   </header>
 
   <section class="Container">
-    <!-- Seach for a city  -->
+    <!-- Search for a city  -->
     <div class="row-1">
       <aside class="searchBox col-12 col-md-4 col-lg-3">
           <h3 class="searchInputHeader">Search for a City:</h3>
             <input type="text" class="searchInput"></input>
-            <button class="searchBtn">Search</button>
+            <button type="button" class="btn btn-primary">Search</button>
             <ul class="searchHistory">
-                <li class="searchHistory-item" id="searchHistory-item1"></li>
-                <li class="searchHistory-item" id="searchHistory-item2"></li>
-                <li class="searchHistory-item" id="searchHistory-item3"></li>
-                <li class="searchHistory-item" id="searchHistory-item4"></li>
-                <li class="searchHistory-item" id="searchHistory-item5"></li>
-                <li class="searchHistory-item" id="searchHistory-item6"></li>
-                <li class="searchHistory-item" id="searchHistory-item7"></li>
-                <li class="searchHistory-item" id="searchHistory-item8"></li>
+                <button type="button" class="btn btn-secondary">Raleigh, NC</button>
+                <button type="button" class="btn btn-secondary">City, State 2</button>
+                <button type="button" class="btn btn-secondary">City, State 3</button>
+                <button type="button" class="btn btn-secondary">City, State 4</button>
+                <button type="button" class="btn btn-secondary">City, State 5</button>
+                <button type="button" class="btn btn-secondary">City, State 6</button>
+                <button type="button" class="btn btn-secondary">City, State 7</button>
+                <button type="button" class="btn btn-secondary">City, State 8</button>
             </ul>
       </aside>
+    </div>  
 <!-- Current City + Weather  -->
-      <div class= "row-2">
-          <div class = "currentForecast">
-            <h2 class = "City-Date-Icon"></h2>
+    <div class= "row-2">
+        <div class = "currentForecast">
+            <h2 class = "City-Date-Icon">Current City, State</h2>
             <div class = "temp">Temp: </div>
             <div class = "wind">Wind: </div>
             <div class = "humidity">Humidity: </div>
@@ -101,7 +102,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>

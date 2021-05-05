@@ -6,7 +6,6 @@ var searchInputEl = $(".searchInput");
 
 // Function to create the cityList
 $.getJSON("./assets/city.list.json", function (json) {
-  console.log(json);
   for (let index = 0; index < json.length; index++) {
     cityList.push(`${json[index].name}, ${json[index].state}`);
   }
@@ -19,15 +18,26 @@ $(function () {
   });
 });
 
-// // Function to go get data (API) for user input
-$("#btn1").click(function () {
-  const cityName = "Raleigh";
-  const stateCode = "NC";
-  const countryCode = "US";
-  const apiKey = "08ecca64f6fc6837576d8b780463552f";
+// Function to go get data (API) for user input
+searchBtnEl.click(function() {
+  const userSearch = $('.searchInput').val();
+  console.log(userSearch);
+  const userSearchSplit = userSearch.split(",")
+  console.log(userSearchSplit);
+
+  if (userSearchSplit.length < 2) {
+    alert("Please enter a valid City and State")
+    return;
+  }
+
+// Define city and state as a result of the split 
+  const cityName = userSearchSplit[0].trim();
+  const stateCode = userSearchSplit[1].trim();
+  // const countryCode = "US";
+  // const apiKey = "08ecca64f6fc6837576d8b780463552f";
 
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateCode},${countryCode}&appid=${apiKey}`
+    `http://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateCode},US&appid=08ecca64f6fc6837576d8b780463552f`
   ).then((response) => response.json().then(console.log));
   console.log("hi");
 });
@@ -39,6 +49,8 @@ $("#btn1").click(function () {
 // 3. save today's weather from search to the local storage so that data can be called when user selects the button from history
 
 // https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+
+// `http://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateCode},${countryCode}&appid=${apiKey}`
 
 // https://openweathermap.org/api/geocoding-api
 

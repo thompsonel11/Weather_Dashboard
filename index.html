@@ -15,7 +15,7 @@
 <body>
 
   <header class="weatherDashboard">
-    <div class="container text-center gradientBackground">
+    <div class="container text-center">
       <h1>Weather Dashboard</h1>
     </div>
   </header>
@@ -26,67 +26,17 @@
       <aside class="searchBox col-12 col-md-4 col-lg-3">
           <h3 class="searchInputHeader">Search for a City:</h3>
           <div class="ui-widget">
-            <input type="text" class="searchInput"></input>
+            <input type="text" class="searchInput"></input>    
           </div>
-          
-            <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
+          <br>
+            <button type="button" class="btn btn-primary" id="searchBtn">Search</button><br>
             <div class="recentSearches"></div>
       </aside>
     </div>  
-<!-- Current City + Weather  -->
+    <!-- Current + Five Day Forecast -->
     <div class= "row-2">
-        <div class = "currentForecast">
-            <!-- <h2 class = "City-Date-Icon">Current City, State</h2>
-            <div class = "temp">Temp: </div>
-            <div class = "wind">Wind: </div>
-            <div class = "humidity">Humidity: </div>
-            <div class = "UVIndex">UV Index: </div> -->
-          </div>
-<!-- 5 day forecast  -->
-          <div class = "fiveDayForecast">
-              <h3 class = "col-md-12">5 Day Forecast: </h3>
-<!-- Day 1 of 5 -->
-              <div class="col-md-12">
-                <div class="5day-date"></div>
-                <img class="5day-icon">
-                <div class="temp">Temp: <span>F</span></div>
-                <div class="wind">Wind: <span>MPH</span></div>
-                <div class="humidity">Humidity: <span>%</span></div>
-              </div>
-<!-- Day 2 of 5 -->
-            <div class="col-md-12">
-                <div class="5day-date"></div>
-                <img class="5day-icon">
-                <div class="temp">Temp: <span>F</span></div>
-                <div class="wind">Wind: <span>MPH</span></div>
-                <div class="humidity">Humidity: <span>%</span></div>
-            </div>
-<!-- Day 3 of 5 -->
-            <div class="col-md-12">
-                <div class="5day-date"></div>
-                <img class="5day-icon">
-                <div class="temp">Temp: <span>F</span></div>
-                <div class="wind">Wind: <span>MPH</span></div>
-                <div class="humidity">Humidity: <span>%</span></div>
-            </div>
-<!-- Day 4 of 5 -->
-            <div class="col-md-12">
-                <div class="5day-date"></div>
-                <img class="5day-icon">
-                <div class="temp">Temp: <span>F</span></div>
-                <div class="wind">Wind: <span>MPH</span></div>
-                <div class="humidity">Humidity: <span>%</span></div>
-            </div>
-<!-- Day 5 of 5 -->
-            <div class="col-md-12">
-                <div class="5day-date"></div>
-                <img class="5day-icon">
-                <div class="temp">Temp: <span>F</span></div>
-                <div class="wind">Wind: <span>MPH</span></div>
-                <div class="humidity">Humidity: <span>%</span></div>
-            </div>
-
-         </div>
+        <div class = "currentForecast"></div>
+        <div class = "fiveDayForecast"></div>
        </div>  
   </main>
 

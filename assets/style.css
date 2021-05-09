@@ -1,3 +1,25 @@
-gradientBackground {
-    background: linear-gradient(180deg, rgb(52, 107, 218), rgb(3, 34, 75))
+
+.weatherDashboard {
+    flex-direction: center;
+    background: linear-gradient(to right, rgb(35, 102, 245), rgb(19, 3, 158));
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+  }
+
+.currentForecast{
+  flex-direction: center;
+  text-align: left;
+  margin: 20px;
+  padding: 30px;
+  font-size: 14px;
 }
+
+.fiveDayForecast {
+    flex-direction: center;
+    text-align: left;
+    margin: 20px;
+    padding: 30px;
+    font-size: 14px;
+  }

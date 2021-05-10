@@ -24,7 +24,7 @@ $(function () {
 searchBtnEl.click(function () {
   const userSearch = $(".searchInput").val();
   pushToRecentSearches(userSearch);
-  console.log(userSearch);
+  // console.log(userSearch);
   runSearch(userSearch);
   buildRecentSearchButtons();
 });
@@ -33,7 +33,7 @@ searchBtnEl.click(function () {
 // runSearch function first splits the user's input into City, State 
 function runSearch(userSearch) {
   const userSearchSplit = userSearch.split(",");
-  console.log(userSearchSplit);
+  // console.log(userSearchSplit);
   // Define city and state as a result of the split
   const cityName = userSearchSplit[0].trim();
   const stateCode = userSearchSplit[1].trim();
@@ -45,7 +45,7 @@ function runSearch(userSearch) {
   }
   // Define constants for API Key and for both API's: Current and 5 Day Forecast
   const apiKey = '08ecca64f6fc6837576d8b780463552f';
-  const currentAPI = `http://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateCode},US&appid=${apiKey}`;
+  const currentAPI = `https://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateCode},US&appid=${apiKey}`;
   const fiveDayAPI = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName},${stateCode},US&appid=${apiKey}`;
 
   // Utilizing Promise to return both APIs via fetch  

@@ -20,7 +20,7 @@ $(function () {
   });
 });
 //-----------------------------------------------------------------
-// Click event that takes user input, pushes to resent search and runs search using the function below
+// Click event that takes user input, pushes to recent search and runs search using the function below
 searchBtnEl.click(function () {
   const userSearch = $(".searchInput").val();
   pushToRecentSearches(userSearch);
